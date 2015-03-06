@@ -744,7 +744,8 @@ StaticMifToXsd.xsl version 2.0</xs:documentation>
 			<xs:element name="typeId" type="POCD_MT000040.InfrastructureRoot.typeId" minOccurs="0"/>
 			<xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded"/>
-			<xs:element name="code" type="CD"/>
+			<!--- CHANGED BY HBC from type="CD" -->
+			<xs:element name="code" type="CD_explicit"/>
 			<xs:element name="derivationExpr" type="ST_explicit" minOccurs="0"/>
 			<xs:element name="text" type="ED_explicit" minOccurs="0"/>
 			<xs:element name="statusCode" type="CS" minOccurs="0"/>
